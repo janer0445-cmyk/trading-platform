@@ -1,0 +1,24 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+body { background: #0d1117; color: #fff; }
+
+header { display: flex; justify-content: space-between; align-items: center;
+  padding: 20px; background: #161b22; }
+.logo { font-size: 24px; font-weight: bold; color: #58a6ff; }
+.logo span { color: #f39c12; }
+nav a { margin: 0 15px; color: #fff; text-decoration: none; }
+.login-btn { padding: 8px 16px; background: #f39c12; border: none; cursor: pointer; }
+
+.hero { text-align: center; padding: 60px 20px; }
+.cta-btn { margin-top: 20px; padding: 12px 24px; font-size: 18px;
+  background: #58a6ff; border: none; cursor: pointer; }
+
+.trade-section { padding: 40px; }
+.trade-container { display: flex; gap: 30px; flex-wrap: wrap; }
+canvas { background: #fff; border-radius: 10px; padding: 10px; }
+.order-form { background: #161b22; padding: 20px; border-radius: 10px; }
+.order-form button { margin: 5px; padding: 10px; border: none; cursor: pointer; }
+.order-form button:first-of-type { background: #2ecc71; }
+.order-form button:last-of-type { background: #e74c3c; }
+
+.trade-history { margin-top: 20px; background: #161b22; padding: 20px; border-radius: 10px; }
