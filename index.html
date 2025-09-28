@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NextGen Trading</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">NextGen<span>Trade</span></div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#markets">Markets</a>
+      <a href="#wallet">Wallet</a>
+      <a href="#trade">Trade</a>
+    </nav>
+    <button class="login-btn">Login / Signup</button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Trade Crypto & Forex Instantly</h1>
+    <p>Secure, fast and reliable trading platform.</p>
+    <button class="cta-btn">Start Trading</button>
+  </section>
+
+  <!-- Trading Interface -->
+  <section id="trade" class="trade-section">
+    <h2>Live Trading</h2>
+    <div class="trade-container">
+      <!-- Chart -->
+      <canvas id="priceChart"></canvas>
+
+      <!-- Order Form -->
+      <div class="order-form">
+        <h3>Place Order</h3>
+        <label>Amount (USD):</label>
+        <input type="number" id="tradeAmount" placeholder="100">
+        <button onclick="placeOrder('buy')">Buy</button>
+        <button onclick="placeOrder('sell')">Sell</button>
+      </div>
+    </div>
+
+    <!-- Trade History -->
+    <div class="trade-history">
+      <h3>Recent Trades</h3>
+      <ul id="tradeList"></ul>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
